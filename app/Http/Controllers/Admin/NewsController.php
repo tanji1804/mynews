@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class NwsController extends Controller
+class NewsController extends Controller
 {
     //
     public function add()
