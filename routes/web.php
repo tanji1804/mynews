@@ -17,12 +17,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// NewsController
 use App\Http\Controllers\Admin\NewsController;
 Route::controller(NewsController::class)->prefix('admin')->name('admin.')->middleware('auth')->group(function(){
     Route::get('news/create', 'add')->name('news.add');
     Route::post('news/ceate', 'create')->name('news.create');
+    Route::get('news', 'index')->name('news.index');
 });
 
+// ProfileController
 use App\Http\Controllers\Admin\ProfileController;
 Route::controller(ProfileController::class)->prefix('admin')->middleware('auth')->group(function(){
     Route::get('profile/create', 'add')->name('profile.add');
