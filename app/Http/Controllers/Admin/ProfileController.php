@@ -32,6 +32,7 @@ class ProfileController extends Controller
         return redirect('admin/profile/create');
     }
     
+    //index
     public function index(Request $request)
     {
         $profiles = Profile::all();
