@@ -55,7 +55,7 @@
                                     <button type="submit" class="btn btn-primary">
                                         {{ __('messages.login') }}
                                     </button>
-                                    <a href="/register" class="btn btn-primary">
+                                    <a href="{{ route('register')}}" class="btn btn-primary">
                                         {{ __('messages.signup')}}
                                     </a>
                                 </div>
