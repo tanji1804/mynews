@@ -41,7 +41,9 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <!-- Left Side Of Navbar -->
                         <ul class="navbar-nav ms-auto">
-
+                            <a class="navbar-button" href="{{ url('/')}}">ホーム</a>
+                            <a class="navbar-button" href="{{ url('/profile')}}">投稿者一覧</a>
+                            <a class="navbar-button" href="{{ route('admin.news.index')}}">投稿者ツール</a>
                         </ul>
 
                         <!-- Right Side Of Navbar -->

@@ -48,3 +48,13 @@ body {
   border-color: #fff;
   background-color: #000;
 }
+
+.card {
+  background-color: #000;
+}
+
+.navbar-button {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px 0 10px;
+}
